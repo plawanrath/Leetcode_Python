@@ -82,7 +82,7 @@ from collections import defaultdict
 
 
 def wordBreak(s: str, wordDict: List[str]) -> List[str]:
-    # recursion with memorization O(N^2)
+    # recursion with memorization O(N^3) - Loop inside recusrion and also substring.
     res = defaultdict(list)
     res[0] = [['']] # Where key remembers the index from which the split happened i.e. memorization and value is a list of list of word combinations 
     def dfs(i):
