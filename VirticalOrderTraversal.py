@@ -46,6 +46,8 @@ verticalTraversal(4)
         Since all the next values in queue are None, the loop will just continue in the "if not node" condition
         until queue is empty.
         Return: [[1], [2], [4, 3], [5]]
+
+TIme complexity: O(n), space complexity: O(n)
 """ 
 from collections import defaultdict
 from collections import deque
