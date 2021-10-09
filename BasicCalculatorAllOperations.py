@@ -103,6 +103,8 @@ for c in s + '+':
     return 7
 
 Answer = 7
+
+O(n) time and space complexity
 """
 
 
