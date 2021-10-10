@@ -73,7 +73,7 @@ def maxSwap(num: int) -> int:
     # Now we need to find the rightmost largest number (if any) after the inflection point
     # to see if we can get any other swap candidates.
     while j < n:
-        if res[j] > res[bigSwapIndex]:
+        if res[j] >= res[bigSwapIndex]:
             bigSwapIndex = j
         j += 1
     
@@ -88,4 +88,4 @@ def maxSwap(num: int) -> int:
     # Now we just swap
     res[smallSwapIndex], res[bigSwapIndex] = res[bigSwapIndex], res[smallSwapIndex]
 
-    return res
+    return int(("").join(res))
