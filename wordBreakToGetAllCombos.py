@@ -9,6 +9,14 @@ wordBreak(s, wordDict)
 return:
 ['cats and dog', 'cat sand dog']
 
+
+Approach: This can be done with DFS. We start with the entire string s. 
+Then we go word by word in the wordDict to see if we can find one of the dordDict words in the string s
+When we find one of the words in the wordDict, we start a recursive DFS in the reminder of the string if the reminder of the string is not already another valid word from the wordDict.
+We will also maintain another list which will store all possible combos with valid words. So when we find a word in the wordDict we will simply add that with all the word combos to start making valid sentences.
+
+This will continue until we have run our DFS through the entire string s. Finally we can join the resulting list of combos to get a list of valid word breaks. 
+
 res = {0: [['']]} 
 dfs(len(catsanddog)) = dfs(10) --> 1
     for w in wordDict:
