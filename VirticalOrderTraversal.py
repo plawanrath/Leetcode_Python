@@ -1,5 +1,5 @@
 """
-Given the root of a binary tree, return the vertical order traversal of its nodes' values.
+Given the root of a binary tree, return the vertical order traversal of its nodes' values (of a BST or if sorting order in the same level doesn't matter).
 
 Input Tree
     4
