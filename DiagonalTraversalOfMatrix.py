@@ -34,7 +34,7 @@ from collections import defaultdict
 
 
 def findDiagonalOrder(matrix: List[List[int]]) -> List[int]:
-    d=defaultdict(int)
+    d=defaultdict(list)
     #loop through matrix
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
