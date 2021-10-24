@@ -1,3 +1,9 @@
+"""
+Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
+
+"""
+
 def validPalindrome(s: str) -> bool:
     l, r = 0, len(s) - 1
     while l < r:

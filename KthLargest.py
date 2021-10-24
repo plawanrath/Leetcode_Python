@@ -7,10 +7,13 @@ Output = 5
 
 Algorithm:
 Choose a random pivot.
-Use a partition algorithm to place the pivot into its perfect position pos in the sorted array, move smaller elements to the left of pivot, and larger or equal ones - to the right.
+Use a partition algorithm to place the pivot into its perfect position pos in the sorted array, 
+move smaller elements to the left of pivot, and larger or equal ones - to the right.
+
 Compare pos and N - k to choose the side of array to proceed recursively.
 
-The quick select algorithm will return the kth smallest element. Which means that if we call the select function with len(array) - k as the value of its parameter k, then that
+The quick select algorithm will return the kth smallest element. Which means that if we call the select 
+function with len(array) - k as the value of its parameter k, then that
 would give the kth largest element.
 
 nums = [3,2,1,5,6,4], k = 2
@@ -58,6 +61,7 @@ Best case: Best case occurs when we partition the list into two halves and conti
 Space complexity: O(1)
 """
 from typing import List
+import random
 
 
 def findKthLargest(nums: List[int], k: int) -> int:

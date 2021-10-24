@@ -1,3 +1,12 @@
+"""
+Approach: DFS + Backtracking
+
+Time Complexity: O(2^N)
+since in the worst case we will have only left parentheses in the expression and for 
+every bracket we will have two options i.e. whether to remove it or consider it.
+
+Space: O(N)
+"""
 from typing import List
 
 
